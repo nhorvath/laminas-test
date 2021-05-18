@@ -30,12 +30,12 @@ class ModuleLoaderTest extends \PHPUnit\Framework\TestCase
         return rmdir($dir);
     }
 
-    public function setUp()
+	protected function setUp(): void
     {
         $this->tearDownCacheDir();
     }
 
-    public function tearDown()
+	protected function tearDown(): void
     {
         $this->tearDownCacheDir();
     }

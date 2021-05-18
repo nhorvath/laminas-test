@@ -16,7 +16,7 @@ use Laminas\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
 
 class IndexControllerTest extends AbstractHttpControllerTestCase
 {
-    public function setUp()
+    protected function setUp(): void
     {
         $this->setApplicationConfig(
             include '/path/to/application/config/test/application.config.php'
@@ -51,7 +51,7 @@ In order to test your MVC application, you will need to setup the application co
 the `setApplicationConfig` method :
 
 ```php
-public function setUp()
+protected function setUp(): void
 {
     $this->setApplicationConfig(
         include '/path/to/application/config/test/application.config.php'

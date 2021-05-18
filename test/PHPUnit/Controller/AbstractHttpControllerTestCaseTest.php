@@ -19,7 +19,7 @@ use Laminas\View\Model\ViewModel;
  */
 class AbstractHttpControllerTestCaseTest extends AbstractHttpControllerTestCase
 {
-    public function setUp()
+    protected function setUp(): void
     {
         $this->setApplicationConfig(
             include __DIR__ . '/../../_files/application.config.php'

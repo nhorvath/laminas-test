@@ -14,7 +14,7 @@ use Laminas\Test\PHPUnit\Controller\AbstractConsoleControllerTestCase;
  */
 class AbstractConsoleControllerTestCaseTest extends AbstractConsoleControllerTestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->setApplicationConfig(
             include __DIR__ . '/../../_files/application.config.php'

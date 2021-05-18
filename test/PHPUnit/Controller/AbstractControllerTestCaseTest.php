@@ -40,7 +40,7 @@ class AbstractControllerTestCaseTest extends AbstractHttpControllerTestCase
         return rmdir($dir);
     }
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->tearDownCacheDir();
         Console::overrideIsConsole(null);
@@ -50,7 +50,7 @@ class AbstractControllerTestCaseTest extends AbstractHttpControllerTestCase
         parent::setUp();
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         $this->tearDownCacheDir();
         parent::tearDown();
