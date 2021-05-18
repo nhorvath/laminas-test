@@ -8,9 +8,9 @@
 namespace LaminasTest\Test\PHPUnit\Util;
 
 use Laminas\Test\Util\ModuleLoader;
-use PHPUnit_Framework_TestCase;
+use \PHPUnit\Framework\TestCase;
 
-class ModuleLoaderTest extends PHPUnit_Framework_TestCase
+class ModuleLoaderTest extends \PHPUnit\Framework\TestCase
 {
     public function tearDownCacheDir()
     {

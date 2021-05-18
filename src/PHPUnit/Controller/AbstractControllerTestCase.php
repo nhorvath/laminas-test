@@ -17,9 +17,9 @@ use Laminas\Stdlib\Parameters;
 use Laminas\Stdlib\ResponseInterface;
 use Laminas\Uri\Http as HttpUri;
 use PHPUnit_Framework_ExpectationFailedException;
-use PHPUnit_Framework_TestCase;
+use \PHPUnit\Framework\TestCase;
 
-abstract class AbstractControllerTestCase extends PHPUnit_Framework_TestCase
+abstract class AbstractControllerTestCase extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var \Laminas\Mvc\ApplicationInterface
